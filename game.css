@@ -1,0 +1,30 @@
+#game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;/*помешаем в центр все элементы*/ /**/
+}
+
+#winner {
+    color: rgb(0, 0, 0);
+}
+
+#cells-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);/*Рисуем 3 колонки по 100 пикс*/
+}
+
+.cell {
+    border: 2px solid rgb(0, 0, 0); /*Рисуем границы 2 пикс*/
+    height: 100px;
+    width: 100px;
+    font-size: 70px;/*Размер шрифта в каждой ячейке*/
+    text-align: center;/*Текст по центру*/
+}
+
+#turn-info { /*Очередь ходить (Текст)*/
+    font-size: 40px;/*Размер шрифта*/
+    font-weight: bold;/*жирность шрифта*/
+    color: rgb(0, 0, 0);/*цвет шрифта*/
+}
+
